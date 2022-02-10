@@ -1,12 +1,13 @@
 ---
 title: "Joins"
-teaching: 0
+teaching: 20
 
 
 objectives:
-- "First learning objective. (FIXME)"
+- "Understanding the concepts of JOINS"
+- "Data manipulation using Joins in SQL"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Familiarize the concepts of left join, right join, inner join, outer join and self join along with hands on examples"
 ---
 
 ## JOINS
@@ -101,4 +102,3 @@ WHERE D1.DeptId = D2.DeptId
 ![Joins_7](../fig/joins_7.JPG)
 
 {% include links.md %}
-

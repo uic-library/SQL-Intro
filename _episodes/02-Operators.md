@@ -1,33 +1,30 @@
 ---
 title: "Operators"
-teaching: 0
-exercises: 0
-questions:
-- "Key question (FIXME)"
+teaching: 20
+
 objectives:
-- "First learning objective. (FIXME)"
+- "Understanding the concepts of Operators using SQL"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Familiarize with Arithmetic operations, Comparison operators and Logical Operators"
 ---
-FIXME
 
 ## OPERATORS
 
 The  operators help  perform  operations on the  data  in  the table. They  can  be  used  to  perform arithmetic operations or filter based on certain conditions.
 
-Consider the below table: 
+Consider the below table:
 
 ![Opt_1](../fig/opt_1.JPG)
 
 ### ARITHMETIC OPERATORS:
 
-The arithmetic operators help perform arithmetic operations on the data in the table 
+The arithmetic operators help perform arithmetic operations on the data in the table
 
 ![Opt_2](../fig/opt_2.JPG)
 
 #### Example:
 
-```sql	
+```sql
 SELECT ProductID, Unit, Price, Price * Unit AS Total_sales, Price % Unit AS Modulo_result FROM Products
 ```
 ![Opt_3](../fig/opt_3.JPG)
@@ -58,7 +55,7 @@ SELECT ProductID, ProductName, Price FROM Products WHERE Price = 18
 
 ### LOGICAL OPERATORS:
 
-SQL has three logical operators which can be used to specify more than one condition in the WHEREclause. 
+SQL has three logical operators which can be used to specify more than one condition in the WHEREclause.
 
 The three operators are:
 
@@ -79,25 +76,24 @@ SELECT columns FROM table_namem WHERE NOTcondition
 #### Examples:
 
 ```sql
-SELECT CustomerName, Country, City, PostalCode 
+SELECT CustomerName, Country, City, PostalCode
 From Customers
 Where Country = 'Brazil' AND City = 'São Paulo'
 ```
 ![Opt_7](../fig/opt_7.JPG)
 
 ```sql
-SELECT CustomerName, Country, City, PostalCode 
+SELECT CustomerName, Country, City, PostalCode
 From Customers
 Where City = 'Nantes' OR City = 'Paris'
 ```
 ![Opt_8](../fig/opt_8.JPG)
 
 ```sql
-SELECT CustomerName, Country, City, PostalCode 
+SELECT CustomerName, Country, City, PostalCode
 From Customers
 Where Not City = 'London'
 ```
 ![Opt_9](../fig/opt_9.JPG)
 
 {% include links.md %}
-

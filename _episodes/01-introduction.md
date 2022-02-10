@@ -3,9 +3,11 @@ title: "Introduction"
 teaching: 0
 
 objectives:
-- "First learning objective. (FIXME)"
+- "Introduction To SQL"
+- "Build understanding on important keywords of SQL"
+
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Introduction to SQL and its keywords like SELECT, FROM, AS, WHERE, DISTINCT, ORDER BY"
 ---
 
 ## INTRODUCTION TO SQL
@@ -17,11 +19,11 @@ database and perform necessary operations such as update existing data (or) retr
 
 A database generally comprises of multiple tables and each table consists of multiple
 records (rows) and attributes (columns). SQL helps perform operations on the tables of the
-database. 
+database.
 
 ![Intro_1](../fig/Intro_1.JPG)
 
-### SELECT: 
+### SELECT:
 
 The SELECT statement is used to indicate what is required to be selected from the table.
 To select columns from the table, mention the names of the columns after SELECT keyword. To
@@ -144,4 +146,3 @@ SELECT CustomerID, CustomerName, ContactName, City FROM Customers ORDER BY Custo
 ![Intro_11](../fig/Intro_11.JPG)
 
 {% include links.md %}
-
