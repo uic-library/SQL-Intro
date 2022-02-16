@@ -11,7 +11,7 @@ keypoints:
 
 ## Workshop Setup
 
-There is no setup required for this workshop. This workshop will utilize W3schools "SQL Tryit Editor v1.6" for all exercises practicing SQL queries. Please follow the link below to access the SQL Tryit Editor in your browser.
+There is no setup required for this workshop. This workshop will utilize W3schools "SQL Tryit Editor v1.6" for all exercises practicing SQL queries. Please follow the link below to access the SQL Tryit Editor in your browser.  
 
 [SQL Tryit Editor v1.6](https://www.w3schools.com/sql/trysql.asp?filename=trysql_asc)
 
