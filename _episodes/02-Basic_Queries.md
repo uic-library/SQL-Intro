@@ -70,6 +70,8 @@ SELECT * FROM Customers WHERE Country="Germany"
 ```
 ![Intro_7](../fig/Intro_7.JPG)
 
+*Note* : While using strings, the inverted commas ("string") needs to be used.
+
 ### DISTINCT:
 
 The DISTINCT keyword  is  used  to  select  and  display  all  the  unique  values  under  the specified column. The keywords in SQL can be combined to get necessary results based on what kind of results which is required. For example, to identify all the different countries in the table, to identify the different departments where employees work in a employee table etc.
