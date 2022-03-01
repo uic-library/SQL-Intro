@@ -35,10 +35,11 @@ We will be using W3School's SQL editor for implementing the SQL queries on prede
 
 | Section    | Overview | Time Estimate |
 | ------- | ---------- |
-|[Setup](https://uic-library.github.io/SQL-Intro/00-setup/index.html)    | download and setup required software. Download data files/other required set up files|0:20 min|
-|[Introduction to SQL](https://uic-library.github.io/SQL-Intro/01-introduction/index.html) | Introduction To SQL and build understanding on important keywords of SQL|0:20 min|
-|[Operators](https://uic-library.github.io/SQL-Intro/02-Operators/index.html)| Understanding the concepts of Operators using SQL|0:20 min|
-|[Joins](https://uic-library.github.io/SQL-Intro/03-Joins/index.html)| Understanding the concepts of JOINS and data manipulation using Joins in SQL|0:20 min|
+|[Setup](https://uic-library.github.io/SQL-Intro/00-setup/index.html)    | download and setup required software. Download data files/other required set up files|0:10 min|
+|[Introduction to SQL](https://uic-library.github.io/SQL-Intro/01-introduction/index.html) | Introduction To SQL |0:5 min|
+|[Basic Queries](https://uic-library.github.io/SQL-Intro/02-Basic_Queries/index.html) | Build understanding on important keywords of SQL |0:20 min|
+|[Operators](https://uic-library.github.io/SQL-Intro/03-Operators/index.html)| Understanding the concepts of Operators using SQL|0:20 min|
+|[Joins](https://uic-library.github.io/SQL-Intro/04-Joins/index.html)| Understanding the concepts of JOINS and data manipulation using Joins in SQL|0:20 min|
 
 {% comment %}
 ## Workshop Recording
@@ -54,4 +55,3 @@ Thank you for attending this workshop or reading through the workshop material! 
 ## Next Up...
 Check out these workshops after you've completed this one:
 1. [SQL Advanced]()
-2. [Workshop Title]()

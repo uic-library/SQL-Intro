@@ -152,6 +152,6 @@ SELECT CustomerID AS ID, CustomerName AS Customer
 FROM Customers;
 ```
 
-![Intro_12](../fig/Intro_12.JPG)
+![Intro_12](../fig/Intro_12.jpg)
 
 {% include links.md %}
