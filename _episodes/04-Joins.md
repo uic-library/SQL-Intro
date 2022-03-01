@@ -13,11 +13,12 @@ keypoints:
 ## JOINS
 
 A database generally comprises of multiple tables and a RDBMS comprises of tables which are related. When data is required to be extracted from two or more tables which are related to each other then we perform a join to combine the tables first and then extract the result.
-![Joins_1](../fig/joins_1.JPG)
+![Joins_1](../fig/Joins__new_1.JPG)
 
 Consider the below two tables which will be used for upcoming examples
-![Joins_2](../fig/joins_2.JPG)
+![Joins_2](../fig/Joins__new_2.JPG)
 
+![Joins_3](../fig/Joins__new_3.JPG)
 ### INNER JOIN:
 
 The INNER  JOIN combines  tables  and  returns  the  records  only  when  there  is  an  exact match between the columns on which the join is performed.
@@ -30,11 +31,11 @@ SELECT columns FROM Table1 INNER JOIN Table2 ON Table1.column=Table2.column
 
 #### Example:
 ```sql
-SELECT E.EmpID, E.Emp_Name, E.Department_ID, D.Department_Name
-FROM Department AS D INNER JOIN Employee AS E
-ON D.DeptID = E.Department_ID
+SELECT Orders.OrderID, Customers.CustomerName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID
 ```
-![Joins_3](../fig/joins_3.JPG)
+![Joins_4](../fig/Joins__new_4.JPG)
 
 ### LEFT JOIN:
 
@@ -48,11 +49,11 @@ SELECT columns FROM Table1 LEFT JOIN Table2 ON Table1.column=Table2.column
 
 #### Example:
 ```sql
-SELECT E.EmpID, E.Emp_Name, E.Department_ID, D.Department_Name
-FROM Department AS D LEFT JOIN Employee AS E
-ON D.DeptID = E.Department_ID
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
 ```
-![Joins_4](../fig/joins_4.JPG)
+![Joins_5](../fig/Joins__new_5.JPG)
 
 ### RIGHT JOIN:
 
@@ -66,11 +67,11 @@ SELECT columns FROM Table1 RIGHT JOIN Table2 ON Table1.column=Table2.column
 
 #### Example:
 ```sql
-SELECT E.EmpID, E.Emp_Name, E.Department_ID, D.Department_Name
-FROM Department AS D RIGHT JOIN Employee AS E
-ON D.DeptID = E.Department_ID
+SELECT Orders.OrderID, Employees.LastName, Employees.FirstName
+FROM Orders
+RIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
 ```
-![Joins_5](../fig/joins_5.JPG)
+![Joins_6](../fig/Joins__new_6.JPG)
 
 ### OUTER JOIN:
 
@@ -80,7 +81,7 @@ The OUTER JOIN combines tables and returns the records only when there is an exa
 ```sql
 SELECT columns FROM Table1 FULL OUTER JOIN Table2 ON Table1.column=Table2.column
 ```
-![Joins_6](../fig/joins_6.JPG)
+![Joins_7](../fig/Joins__new_7.JPG)
 
 ### SELF JOIN:
 
@@ -95,10 +96,11 @@ SELECT columns FROM Table1 T1, Table2 T2 ON T1.column=T2.column
 #### Example:
 
 ```sql
-SELECT *
-FROM Department D1, Department D2
-WHERE D1.DeptId = D2.DeptId
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID <> B.CustomerID
+AND A.City = B.City
 ```
-![Joins_7](../fig/joins_7.JPG)
+![Joins_8](../fig/Joins__new_8.JPG)
 
 {% include links.md %}

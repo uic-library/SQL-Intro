@@ -36,6 +36,8 @@ SELECT * FROM Customers
 ```
 ![Intro_3](../fig/Intro_3.JPG)
 
+Basically, we are saying show me all the columns (*) from the table Customers.
+
 Selecting particular columns
 
 ```sql
@@ -70,7 +72,7 @@ SELECT * FROM Customers WHERE Country="Germany"
 ```
 ![Intro_7](../fig/Intro_7.JPG)
 
-*Note* : While using strings, the inverted commas ("string") needs to be used.
+**Note** : While using strings, the inverted commas ("string") needs to be used.
 
 ### DISTINCT:
 
@@ -132,5 +134,24 @@ SELECT CustomerID, CustomerName, ContactName, City FROM Customers ORDER BY Custo
 SELECT CustomerID, CustomerName, ContactName, City FROM Customers ORDER BY CustomerName DESC
 ```
 ![Intro_11](../fig/Intro_11.JPG)
+
+## Aliases
+
+SQL aliases are used to give a table, or a column in a table, a temporary name. Aliases are often used to make column names more readable. An alias only exists for the duration of that query.
+
+An alias is created with the AS keyword.
+
+Syntax
+
+```sql
+SELECT column_name AS alias_name FROM table_name
+```
+
+```sql
+SELECT CustomerID AS ID, CustomerName AS Customer
+FROM Customers;
+```
+
+![Intro_12](../fig/Intro_12.JPG)
 
 {% include links.md %}
