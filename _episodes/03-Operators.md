@@ -31,7 +31,7 @@ SELECT ProductID, Unit, Price, Price * Unit AS Total_sales, Price % Unit AS Modu
 
 ### COMPARISON OPERATORS:
 
-The  comparison  operators  are  used  to  filter  the  results  based  on  a  condition.  They  are generally passed in the WHEREclause and filters the result based on the condition provided.
+The  comparison  operators  are  used  to  filter  the  results  based  on  a  condition.  They  are generally passed in the WHERE clause and filters the result based on the condition provided.
 
 ![Opt_4](../fig/opt_4.JPG)
 
@@ -55,7 +55,7 @@ SELECT ProductID, ProductName, Price FROM Products WHERE Price = 18
 
 ### LOGICAL OPERATORS:
 
-SQL has three logical operators which can be used to specify more than one condition in the WHEREclause.
+SQL has three logical operators which can be used to specify more than one condition in the WHERE clause.
 
 The three operators are:
 

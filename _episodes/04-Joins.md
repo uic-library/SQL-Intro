@@ -20,7 +20,7 @@ Consider the below two tables which will be used for upcoming examples
 
 ### INNER JOIN:
 
-The INNER  JOINcombines  tables  and  returns  the  records  only  when  there  is  an  exact match between the columns on which the join is performed.
+The INNER  JOIN combines  tables  and  returns  the  records  only  when  there  is  an  exact match between the columns on which the join is performed.
 
 #### Syntax:
 
@@ -38,7 +38,7 @@ ON D.DeptID = E.Department_ID
 
 ### LEFT JOIN:
 
-The LEFT JOIN combines tables and returns all the records from the left table. For records where there is no match in the right table it is displayed as a nullSyntax
+The LEFT JOIN combines tables and returns all the records from the left table. For records where there is no match in the right table it is displayed as a null Syntax
 
 #### Syntax:
 
@@ -56,7 +56,7 @@ ON D.DeptID = E.Department_ID
 
 ### RIGHT JOIN:
 
-The RIGHT JOINcombines  tables  and  returns  all  the  records  from  the  right  table.  For records where there is no match in the left table it is displayed as a null
+The RIGHT JOIN combines  tables  and  returns  all  the  records  from  the  right  table.  For records where there is no match in the left table it is displayed as a null
 
 #### Syntax:
 
@@ -74,7 +74,7 @@ ON D.DeptID = E.Department_ID
 
 ### OUTER JOIN:
 
-The OUTER JOINcombines tables and returns the records only when there is an exact match between the columns on which the join is performed.
+The OUTER JOIN combines tables and returns the records only when there is an exact match between the columns on which the join is performed.
 
 #### Syntax:
 ```sql
@@ -84,7 +84,7 @@ SELECT columns FROM Table1 FULL OUTER JOIN Table2 ON Table1.column=Table2.column
 
 ### SELF JOIN:
 
-A SELF-JOINrefers  to  a  condition  where  a  table  is  joined  with  itself.  We  do  not  use  a keyword for self-join but rather specify the name of the table twice (ach with a different alias) and then provide the joining condition in the WHEREclause.
+A SELF-JOIN refers  to  a  condition  where  a  table  is  joined  with  itself.  We  do  not  use  a keyword for self-join but rather specify the name of the table twice (ach with a different alias) and then provide the joining condition in the WHERE clause.
 
 #### Syntax:
 
